@@ -34,8 +34,6 @@ RUN apk add --no-cache --virtual=.build-deps \
 # ===================================================
 # Download Tensorflow
 # ===================================================
-ENV TENSORFLOW_VERSION 1.14.0
-
 # WORKDIR /tmp
 WORKDIR /go/src/github.com/tensorflow
 RUN git clone https://github.com/tensorflow/tensorflow.git
